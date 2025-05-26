@@ -55,22 +55,21 @@ Ce jeu de données contient environ **100 000 commandes** passées entre 2016 et
 
 olist-data-warehouse/
 │
-├── datasets/ # Données brutes issues de Olist 
 │
-├── docs/ # Diagrammes d’architecture
-│ ├── data_flow.drawio # Diagramme du flux de données
-│ ├── data_model_star.drawio # Schéma en étoile final
-│ ├── data_catalog.md # Dictionnaire des tables et colonnes
-│
-├── scripts/
-│ ├── bronze/ # Scripts d’importation brute
-│ ├── silver/ # Scripts de nettoyage et jointure
-│ ├── gold/ # Scripts de création de tables de faits/dimensions
-│
-├── README.md # Ce fichier
-└── .gitignore / LICENSE / requirements.txt
-
-
+├── datasets/ # Données brutes issues de Olist   
+│  
+├── docs/ # Diagrammes d’architecture  
+│ ├── data_flow.drawio # Diagramme du flux de données  
+│ ├── data_model_star.drawio # Schéma en étoile final  
+│ ├── data_catalog.md # Dictionnaire des tables et colonnes  
+│  
+├── scripts/  
+│ ├── bronze/ # Scripts d’importation brute  
+│ ├── silver/ # Scripts de nettoyage et jointure  
+│ ├── gold/ # Scripts de création de tables de faits/dimensions  
+│  
+├── README.md # Ce fichier  
+└── .gitignore / LICENSE / requirements.txt  
 ---
 
 ## 🔍 Analyses réalisées
