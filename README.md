@@ -1,10 +1,10 @@
 # Brazilian-E-Commerce-by-Olist
-#📦 Projet Data Warehouse - Olist (E-Commerce Brésilien)
+**📦 Projet Data Warehouse - Olist (E-Commerce Brésilien)**
 
-🛍️ Contexte
+**🛍️ Contexte**
 Ce projet repose sur un jeu de données réel et anonymisé fourni par Olist, une plateforme e-commerce brésilienne. Il contient plus de 100 000 commandes réalisées entre 2016 et 2018 sur plusieurs marketplaces au Brésil. Ces données reflètent des processus réels de vente en ligne, depuis la commande jusqu’à la livraison, en passant par les paiements, les avis clients, les retours et la logistique.
 
-📚 Objectif du projet
+**📚 Objectif du projet**
 Créer un Data Warehouse complet en SQL Server (ou autre SGBD) à partir de données brutes, en appliquant les concepts suivants :
 
 Modèle bronze / silver / gold pour l’architecture des données
@@ -15,7 +15,7 @@ Modélisation dimensionnelle (star schema)
 
 Création de vues métiers pour les analyses (vente, logistique, satisfaction, etc.)
 
-🧾 Description du dataset
+**🧾 Description du dataset**
 Le dataset est composé de plusieurs fichiers représentant les différentes entités du processus e-commerce :
 
 Fichier	Description
@@ -29,7 +29,7 @@ olist_order_payments_dataset.csv	Détail des paiements (montant, type)
 product_category_name_translation.csv	Traduction des catégories produits
 geolocation_dataset.csv	Coordonnées géographiques des codes postaux brésiliens
 
-🔍 Analyse: 
+**🔍 Analyse:** 
 Nettoyage de données (data cleansing) : gestion des données manquantes, incohérentes, doublons, etc.
 
 Qualité produit & satisfaction client : quels produits ou catégories génèrent le plus d’insatisfaction ?
@@ -42,7 +42,7 @@ Segmentation client : analyse RFM ou clustering client
 
 Analyse marketing (si vous ajoutez le funnel marketing)
 
-🧰 Outils recommandés
+**🧰 Outils recommandés**
 SQL Server 
 Power BI 
 
