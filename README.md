@@ -1,5 +1,5 @@
 # Brazilian-E-Commerce-by-Olist
-📦 Projet Data Warehouse - Olist (E-Commerce Brésilien)
+📦 # Projet Data Warehouse - Olist (E-Commerce Brésilien)
 
 🛍️ Contexte
 Ce projet repose sur un jeu de données réel et anonymisé fourni par Olist, une plateforme e-commerce brésilienne. Il contient plus de 100 000 commandes réalisées entre 2016 et 2018 sur plusieurs marketplaces au Brésil. Ces données reflètent des processus réels de vente en ligne, depuis la commande jusqu’à la livraison, en passant par les paiements, les avis clients, les retours et la logistique.
