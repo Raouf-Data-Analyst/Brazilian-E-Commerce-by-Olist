@@ -7,7 +7,7 @@ Ce projet repose sur un jeu de données réel et anonymisé fourni par Olist, un
 
 **📚 Objectif du projet** 
 
-Créer un Data Warehouse complet en SQL Server (ou autre SGBD) à partir de données brutes, en appliquant les concepts suivants :
+Créer un Data Warehouse complet en SQL Server à partir de données brutes, en appliquant les concepts suivants :
 
 Modèle bronze / silver / gold pour l’architecture des données
 
