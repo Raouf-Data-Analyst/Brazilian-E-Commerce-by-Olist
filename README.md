@@ -1,56 +1,97 @@
-# Brazilian-E-Commerce-by-Olist
-**📦 Projet Data Warehouse - Olist (E-Commerce Brésilien)**
+# 🛒 Projet Data Warehouse – E-commerce Brésilien (Olist)
 
-**🛍️ Contexte**
+Bienvenue dans ce projet complet de **Data Warehouse et Analytique** basé sur un jeu de données réel issu de la marketplace brésilienne **Olist**. Ce projet met en pratique les meilleures pratiques en ingénierie des données, nettoyage, modélisation en étoile et analyse SQL, dans un cadre inspiré du monde professionnel.
 
-Ce projet repose sur un jeu de données réel et anonymisé fourni par Olist, une plateforme e-commerce brésilienne. Il contient plus de 100 000 commandes réalisées entre 2016 et 2018 sur plusieurs marketplaces au Brésil. Ces données reflètent des processus réels de vente en ligne, depuis la commande jusqu’à la livraison, en passant par les paiements, les avis clients, les retours et la logistique.
+---
 
-**📚 Objectif du projet** 
+## 🧱 Architecture des données – Medallion Architecture
 
-Créer un Data Warehouse complet en SQL Server à partir de données brutes, en appliquant les concepts suivants :
+Ce projet utilise l'architecture en couches **Bronze**, **Silver** et **Gold** pour construire un data warehouse moderne :
 
-Modèle bronze / silver / gold pour l’architecture des données
+1. **Bronze Layer** : Ingestion brute des fichiers CSV (données ERP et CRM anonymisées).
+2. **Silver Layer** : Nettoyage des données, standardisation, transformation (jointures, filtrages, gestion des anomalies).
+3. **Gold Layer** : Modélisation analytique en schéma en étoile avec tables de faits et dimensions prêtes pour l’analyse.
 
-Nettoyage et enrichissement des données (data cleansing & wrangling)
+---
 
-Modélisation dimensionnelle (star schema)
+## 📦 Données utilisées
 
-Création de vues métiers pour les analyses (vente, logistique, satisfaction, etc.)
+Les données proviennent du dataset [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).  
+Ce jeu de données contient environ **100 000 commandes** passées entre 2016 et 2018 sur différentes marketplaces au Brésil.
 
-**🧾 Description du dataset**  
+### Tables principales :
+- `customers` : informations clients (ID, ville, état)
+- `orders` : statut, date de commande, livraison
+- `order_items` : produits, vendeurs, prix, frais de port
+- `products` : catégorie, nom, poids, dimensions
+- `sellers` : localisation des vendeurs
+- `order_reviews` : notes et commentaires clients
+- `geolocation` : code postal → latitude/longitude
 
-Le dataset est composé de plusieurs fichiers représentant les différentes entités du processus e-commerce :
+> 💡 Les noms des vendeurs et entreprises ont été remplacés par des noms issus de **Game of Thrones** pour anonymiser les données.
 
-Fichier	Description
-olist_orders_dataset.csv	Commandes passées (statut, dates, ID client)
-olist_order_items_dataset.csv	Détails de chaque article commandé
-olist_products_dataset.csv	Produits (nom, catégorie, poids, etc.)
-olist_customers_dataset.csv	Clients (localisation, ID anonymisé)
-olist_order_reviews_dataset.csv	Avis et notes clients
-olist_sellers_dataset.csv	Vendeurs (ID et localisation)
-olist_order_payments_dataset.csv	Détail des paiements (montant, type)
-product_category_name_translation.csv	Traduction des catégories produits
-geolocation_dataset.csv	Coordonnées géographiques des codes postaux brésiliens
+---
 
-**🔍 Analyse:**   
+## 🎯 Objectifs du projet
 
-Nettoyage de données (data cleansing) : gestion des données manquantes, incohérentes, doublons, etc.
+- **Créer un Data Warehouse complet** à partir de données brutes
+- **Nettoyer et transformer** les données multi-sources
+- **Modéliser un schéma en étoile** pour les analyses métier
+- **Réaliser des requêtes analytiques** : comportement client, performance produit, retards de livraison, etc.
+- **Détecter les anomalies** dans les livraisons et retours
 
-Qualité produit & satisfaction client : quels produits ou catégories génèrent le plus d’insatisfaction ?
+---
 
-Performance logistique : délais réels vs prévus, retards, zones géographiques problématiques
+## 🧰 Outils & Technologies
 
-Prévision de ventes : création de variables temporelles et prévision par série temporelle
+- **SQL Server** : Base de données relationnelle
+- **T-SQL** : Scripts ETL et transformations
+- **Draw.io** : Documentation d'architecture
+- **Power BI / Excel (optionnel)** : Visualisation des KPI
 
-Segmentation client : analyse RFM ou clustering client
+---
 
-Analyse marketing (si vous ajoutez le funnel marketing)
+## 📁 Structure du répertoire
 
-**🧰 Outils recommandés** 
+olist-data-warehouse/
+│
+├── datasets/ # Données brutes issues de Olist 
+│
+├── docs/ # Diagrammes d’architecture
+│ ├── data_flow.drawio # Diagramme du flux de données
+│ ├── data_model_star.drawio # Schéma en étoile final
+│ ├── data_catalog.md # Dictionnaire des tables et colonnes
+│
+├── scripts/
+│ ├── bronze/ # Scripts d’importation brute
+│ ├── silver/ # Scripts de nettoyage et jointure
+│ ├── gold/ # Scripts de création de tables de faits/dimensions
+│
+├── README.md # Ce fichier
+└── .gitignore / LICENSE / requirements.txt
 
-SQL Server 
-Power BI 
 
-**🌍 Source des données**
+---
 
-Les données sont disponibles gratuitement sur Kaggle.
+## 🔍 Analyses réalisées
+
+- 🌎 Répartition géographique des clients et vendeurs
+- 📦 Produits les plus vendus par catégorie
+- 🕒 Délais moyens de livraison vs prévision
+- 📈 Évolution des ventes mensuelles
+- ⭐ Notes moyennes par catégorie produit
+
+---
+
+## 🌟 À propos de moi
+
+Salut ! Je suis **Abderaouf Larouci**, passionné de Data et spécialisé dans la transformation de données brutes en insights exploitables. Ce projet reflète ma volonté de reproduire des situations réelles rencontrées en entreprise, en appliquant des standards professionnels.
+
+---
+
+## 📌 Inspirations
+
+- Kaggle Dataset: [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+- Projet inspiré par la formation "DataWithBaraa"
+
+
