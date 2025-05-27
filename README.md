@@ -29,10 +29,18 @@ Ce jeu de données contient environ **100 000 commandes** passées entre 2016 et
 - `order_reviews` : notes et commentaires clients
 - `geolocation` : code postal → latitude/longitude
 
-> 💡 Les noms des vendeurs et entreprises ont été remplacés par des noms issus de **Game of Thrones** pour anonymiser les données.
 
+
+### 🔄 Enrichissement possible : Marketing Funnel
+
+Olist propose également un **dataset complémentaire** : le [Marketing Funnel Dataset](https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist).  
+Ce dernier permet de relier les commandes à des campagnes marketing, en analysant le parcours utilisateur depuis la génération du lead jusqu'à la commande.
+
+🔗 Une commande peut ainsi être analysée **sous l’angle du marketing**, en croisant les deux jeux de données.
+
+➡️ Des instructions de jointure sont disponibles dans [ce Kernel Olist](https://www.kaggle.com/code/olistgroup/brazilian-e-commerce).
 ---
-
+> 💡 Les noms des vendeurs et entreprises ont été remplacés par des noms issus de **Game of Thrones** pour anonymiser les données.
 ## 🎯 Objectifs du projet
 
 - **Créer un Data Warehouse complet** à partir de données brutes
