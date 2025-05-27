@@ -53,7 +53,7 @@ Ce jeu de données contient environ **100 000 commandes** passées entre 2016 et
 
 ## 📁 Structure du répertoire
 
-olist-data-warehouse/
+olist-data-warehouse/  
 │
 ├── datasets/ # Données brutes issues de Olist
 │
