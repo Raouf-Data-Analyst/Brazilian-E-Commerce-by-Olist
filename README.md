@@ -6,11 +6,12 @@ Bienvenue dans ce projet complet de **Data Warehouse et Analytique** basé sur u
 
 ## 🧱 Architecture des données – Medallion Architecture
 
-Ce projet utilise l'architecture en couches **Bronze**, **Silver** et **Gold** pour construire un data warehouse moderne :
+Ce projet suit l'approche en couches **Bronze**, **Silver** et **Gold** pour construire un Data Warehouse moderne à partir de données réelles :
 
-1. **Bronze Layer** : Ingestion brute des fichiers CSV (données ERP et CRM anonymisées).
-2. **Silver Layer** : Nettoyage des données, standardisation, transformation (jointures, filtrages, gestion des anomalies).
-3. **Gold Layer** : Modélisation analytique en schéma en étoile avec tables de faits et dimensions prêtes pour l’analyse.
+1. **Bronze Layer** : Ingestion brute des fichiers CSV provenant du backend e-commerce Olist (commandes, clients, produits, livraisons, etc.).
+2. **Silver Layer** : Nettoyage, standardisation, jointures et enrichissement des données (gestion des doublons, des valeurs manquantes, formats, etc.).
+3. **Gold Layer** : Modélisation analytique selon un schéma en étoile avec des tables de faits (commandes, livraisons, avis) et de dimensions (clients, produits, vendeurs, temps).
+
 
 ---
 
@@ -45,9 +46,8 @@ Ce jeu de données contient environ **100 000 commandes** passées entre 2016 et
 ## 🧰 Outils & Technologies
 
 - **SQL Server** : Base de données relationnelle
-- **T-SQL** : Scripts ETL et transformations
 - **Draw.io** : Documentation d'architecture
-- **Power BI / Excel (optionnel)** : Visualisation des KPI
+- **Power BI / Excel** : Visualisation des KPI
 ```
 ---
 
