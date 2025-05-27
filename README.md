@@ -48,7 +48,7 @@ Ce jeu de données contient environ **100 000 commandes** passées entre 2016 et
 - **T-SQL** : Scripts ETL et transformations
 - **Draw.io** : Documentation d'architecture
 - **Power BI / Excel (optionnel)** : Visualisation des KPI
-
+```
 ---
 
 ## 📁 Structure du répertoire
@@ -71,6 +71,7 @@ olist-data-warehouse/
 ├── .gitignore # Fichiers ignorés par Git
 ├── LICENSE # Licence du projet
 └── requirements.txt # Dépendances éventuelles
+```
 ---
 
 ## 🔍 Analyses réalisées
