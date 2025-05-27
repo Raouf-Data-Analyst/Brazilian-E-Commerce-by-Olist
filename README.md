@@ -39,8 +39,10 @@ Ce dernier permet de relier les commandes à des campagnes marketing, en analysa
 🔗 Une commande peut ainsi être analysée **sous l’angle du marketing**, en croisant les deux jeux de données.
 
 ➡️ Des instructions de jointure sont disponibles dans [ce Kernel Olist](https://www.kaggle.com/code/olistgroup/brazilian-e-commerce).
----
+
 > 💡 Les noms des vendeurs et entreprises ont été remplacés par des noms issus de **Game of Thrones** pour anonymiser les données.
+
+ ---
 ## 🎯 Objectifs du projet
 
 - **Créer un Data Warehouse complet** à partir de données brutes
